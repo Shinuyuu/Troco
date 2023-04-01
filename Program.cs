@@ -39,6 +39,6 @@ Shin(0);
 Console.WriteLine($"| Preço do produto: {Convert.ToString(valor_Preco).PadRight(9,'.')} |"); // 18 pontos.
 barra();
 Shin(0);
-Console.WriteLine($"| Seu troco: {Convert.ToString(Troco).PadRight(16,'.')} |"); // 18 pontos.
+Console.WriteLine($"| Seu troco: {Convert.ToString(Troco).PadLeft(16,'.')} |"); // 18 pontos.
 barra(); 
 Console.ResetColor();

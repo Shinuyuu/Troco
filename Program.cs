@@ -27,17 +27,18 @@ Console.WriteLine("Qual o valor do produto?");
 decimal valor_Preco= Convert.ToDecimal(Console.ReadLine());
 decimal Troco= valor_Usuario-valor_Preco;
 
-
+Console.Clear();
 barra();
 Shin(0);
 Console.WriteLine("|======   Nota  Fiscal  ======|");
 barra();
-Console.WriteLine($"| Seu cartão de débito: {Convert.ToString(valor_Usuario).PadRight(18,'.')} |"); // 18 pontos.
+Shin(0);
+Console.WriteLine($"| Seu cartão de débito: {Convert.ToString(valor_Usuario).PadRight(5,'.')} |"); // 18 pontos.
 barra();
 Shin(0);
-Console.WriteLine($"| Preço do produto: {Convert.ToString(valor_Preco).PadRight(18,'.')} |"); // 18 pontos.
+Console.WriteLine($"| Preço do produto: {Convert.ToString(valor_Preco).PadRight(9,'.')} |"); // 18 pontos.
 barra();
 Shin(0);
-Console.WriteLine($"| Seu troco: {Convert.ToString(Troco).PadRight(18,'.')} |"); // 18 pontos.
+Console.WriteLine($"| Seu troco: {Convert.ToString(Troco).PadRight(16,'.')} |"); // 18 pontos.
 barra(); 
 Console.ResetColor();
